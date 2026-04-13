@@ -5,17 +5,69 @@
     --blue50:  hsl(225, 100%, 98%);
     --blue600: hsl(224, 23%, 55%);
     --blue950: hsl(223, 47%, 23%);
+    
+    --redHatDisplay: "Red Hat Display", sans-serif;
 }
 
 body {
-    background-color: blue;
+    background: url("images/pattern-background-desktop.svg") no-repeat;
+    background-color: var(--blue100);
     margin: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
 
+#order-card {
+    background-color: white;
+    max-width: 450px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#order-card > img {
+    width: 100%;
+    display: block;
+
+}
+
+.order-info {
+    padding: 2rem;
+    font-family: var(--redHatDisplay);
+    text-align: center;
+}
+
+.order-info h2 {
+    font-weight: 900;
+    margin-top: 0;
+    color: var(--blue950);
+}
+
+#order-message {
+    font-weight: 500;
+    color: var(--blue600);
+    line-height: 1.5;
+    max-width: 30ch;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+}
+
+.plan {
+    background-color: var(--blue50);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.plan-info {
+    text-align: left;
+}
+.plan a {
+    text-align: right;
 }
 /*
 
