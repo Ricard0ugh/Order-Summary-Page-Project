@@ -106,7 +106,8 @@ body {
 }
 
 #payment-button:hover {
-    background-color: var(--blue50)
+    opacity: 0.8;
+    transition: opacity .5s ease;
 }
 
 #cancel-button {
@@ -114,6 +115,73 @@ body {
     color: var(--blue600);
     font-weight: 900;
 }
+
+#cancel-button:hover {
+    color: var(--blue950);
+    transition: color 0.6s ease;
+}
+
+#change-button:hover {
+    opacity: 0.7;
+    transition: opacity .5s ease;
+}
+
+
+
+@media (max-width: 600px) {
+    
+    body {
+        background: url("images/pattern-background-mobile.svg") no-repeat;
+        background-color: var(--blue100);
+        background-size: contain;
+    }
+
+    #order-card {
+        max-width: 375px;
+    }
+
+    .order-info {
+        padding: 1.5rem;
+    }
+
+    .order-info h1 {
+        font-size: 1.5rem;
+    }
+
+    #order-message {
+        font-size: 0.95rem;
+    }
+
+    .plan {
+        padding: 0.75rem;
+    }
+
+    .plan img {
+        width: 36px;
+    }
+
+    .plan-info h2 {
+        font-size: 0.9rem;
+    }
+
+    .plan-info p {
+        font-size: 0.85rem;
+    }
+
+    .plan a {
+        font-size: 0.85rem;
+    }
+
+    .payment-btn {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .cancel-btn {
+        font-size: 0.9rem;
+    }
+}
+
 /*
 
 - Font size (paragraph): 16px
