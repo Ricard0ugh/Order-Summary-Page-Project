@@ -11,6 +11,7 @@
 
 body {
     background: url("images/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
     background-color: var(--blue100);
     margin: 0;
 
@@ -25,6 +26,7 @@ body {
     max-width: 450px;
     border-radius: 30px;
     overflow: hidden;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
 }
 
 #order-card > img {
@@ -34,9 +36,13 @@ body {
 }
 
 .order-info {
-    padding: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     font-family: var(--redHatDisplay);
     text-align: center;
+}
+
+.order-info img {
+    width: 55px;
 }
 
 .order-info h2 {
@@ -51,23 +57,62 @@ body {
     line-height: 1.5;
     max-width: 30ch;
     margin: 1rem auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .plan {
     background-color: var(--blue50);
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 1.5rem;
+    padding: 0.5rem 2rem;
     border-radius: 12px;
+    margin-bottom: 2rem;
 }
 
 .plan-info {
     text-align: left;
+    flex: 1;
 }
+
+
+.plan-info h3 {
+    margin-bottom: 0;
+    color: var(--blue950);
+    font-weight: 900;
+}
+
+.plan-info p {
+    margin-top: .5rem;
+    color: var(--blue600);
+    font-weight: 500;
+}
+
+
 .plan a {
-    text-align: right;
+    font-weight: 700;
+}
+
+#payment-button {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--blue700);
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    box-shadow: 0 15px 20px rgba(56, 41, 224, 0.25);
+}
+
+#payment-button:hover {
+    background-color: var(--blue50)
+}
+
+#cancel-button {
+    text-decoration: none;
+    color: var(--blue600);
+    font-weight: 900;
 }
 /*
 
